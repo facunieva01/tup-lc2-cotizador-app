@@ -1,0 +1,87 @@
+.formulario-container {
+    background-color: rgb(203, 205, 207);
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px;
+    font-family: sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-botones {
+    margin-top: 1px;
+    margin-left: 500px;
+}
+
+.btn-limpiar,
+.btn-enviar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-limpiar {
+    background-color: gray;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-enviar {
+    background-color: green;
+    color: white;
+}
+
+.texto-contactowebcotizaciones h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.derecha {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.derecha .parrafo {
+    margin-bottom: 20px;
+}
+
+.derecha .datos-contacto {
+    background-color: rgb(203, 205, 207);
+    border-radius: 15px;
+    padding: 20px;
+    font-family: sans-serif;
+}
