@@ -217,24 +217,43 @@ header p{
     grid-row: 2;
 }
 
-.comentarios {
-    background-color: azure;
-    border-radius: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    text-align: center;
+.opinion-rotator {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
     padding: 20px;
-    margin-top: 20px; 
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
 }
-.comentarios img{
-    width: 150px;
-    height: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 50px;
+
+.opinion {
+    display: none; 
 }
-.comentarios p{
-    margin: 10px;
+
+.opinion.active {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.opinion img {
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    margin-bottom: 10px;
+}
+
+.opinion h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em; 
+}
+
+.opinion p { 
+    color: #555; 
+    text-align: center;
+    margin: 0;
 }

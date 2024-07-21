@@ -13,10 +13,10 @@
 <body>
     <header>
         <div class="Imagen_header">
-            <img src="./img/cabecera-header.jpg" alt="">
+            <img src="img/cabecera-header.jpg" alt="">
         </div>
         <div class="logotipo">
-            <img src="./img/mercado-global.png" alt="">
+            <img src="img/mercado-global.png" alt="">
         </div>
         <p>Usted está aquí: <a href="index.html">Inicio</a> / Contacto</p>
     </header>
@@ -26,7 +26,7 @@
             <nav>
                 <ul>
                     <li>
-                        <img src="./img/hogar.png" alt="Icono"> <!-- Agregar icono -->
+                        <img src="img/hogar.png" alt="Icono"> <!-- Agregar icono -->
                         <a href="index.html">Inicio</a>
                     </li>
                     <li>
@@ -43,11 +43,21 @@
                     </li>
                 </ul>
             </nav>
-            <div class="recomendaciones">
-                <img src="img/usuario.avif" alt="Lilia Medina">
-                <div class="text">
-                    <div class="name">Lilia Medina</div>
-                    <div class="comment">Tiene un buen servicio y las cotizaciones son siempre correctas</div>
+            <div class="opinion-rotator">
+                <div class="opinion active">
+                    <img src="img/usario1.jpg" alt="Usuario 1">
+                    <h5>Roger Medina</h5>
+                    <p>"Excelente servicio y atención al cliente. Siempre resuelven mis dudas rápidamente."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usario2c.jpg" alt="Usuario 2">
+                    <h5>Carlos Alcaraz</h5>
+                    <p>"Los precios son muy competitivos y siempre actualizados. Recomiendo este servicio."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usuario3.jpeg" alt="Usuario 3">
+                    <h5>Facundo Lopez</h5>
+                    <p>"Tienen un buen servicio y las cotizaciones son siempre correctas. Muy satisfecho."</p>
                 </div>
             </div>
         </div>
@@ -61,32 +71,32 @@
             <div class="formulario-container">
                 <h2>DATOS DE CONTACTO</h2>
                 <div class="formulario">
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group">
                             <label for="nombre" id="nombrelabel">Nombre: </label>
-                            <input type="text" name="nombre" id="nombre">
+                            <input type="text" name="nombre" id="nombre" required>
                         </div>
                         <div class="form-group">
                             <label for="email" id="emaillabel">Email: </label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-group">
                             <label for="mensaje" id="mensajelabel">Mensaje: </label>
-                            <textarea name="mensaje" id="mensaje"></textarea>
+                            <textarea name="mensaje" id="mensaje" required></textarea>
                         </div>
-                        
+                        <div class="form-botones">
+                            <button type="button" class="btn-limpiar">Limpiar</button>
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
                     </form>
-                    <div class="form-botones">
-                        <button type="reset" class="btn-limpiar">Limpiar</button>
-                        <button type="submit" class="btn-enviar">Enviar</button>
-                    </div>                    
                 </div>
             </div>
             <div class="derecha">
                 <div class="parrafo">
                     <p>Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y
                         envíenoslo. Lo contactaremos a la brevedad.</p>
-                    <p>Esta web está desarrollada utilizando <a href="https://dolarapi.com/">https://dolarapi.com/</a>
+                    <p>Esta web está desarrollada utilizando <a href="https://dolarapi.com/"
+                            target="_blank">https://dolarapi.com/</a>
                     </p>
                 </div>
                 <div class="datos-contacto">
@@ -96,11 +106,8 @@
                     <p>ROSARIO</p>
                     <p>0341 - 4481871</p>
                 </div>
-                
             </div>
-            
         </div>
-        
     </main>
 
     <footer class="footer1" id="footer">
@@ -127,8 +134,8 @@
                     <td>Rosario</td>
                 </tr>
                 <tr>
-                    <td><a href="Ayuda">> Ayuda</a></td>
-                    <td><a href="Contactenos">> Contáctenos</a></td>
+                    <td><a href="#Ayuda">> Ayuda</a></td>
+                    <td><a href="#Contactenos">> Contáctenos</a></td>
                     <td>0341-4481871</td>
                 </tr>
                 <tr>
@@ -146,7 +153,15 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("aHOY9CmCGaTgBlFBd"); 
+        })();
+    </script>
     <script src="js/pages/contacto.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
